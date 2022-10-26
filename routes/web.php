@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SupplierController;
+use App\Http\Controllers\productController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,4 +16,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/',[HomeController::class,'home']);
- 
+Route::get('/show-product',[SupplierController::class,'Supplier']);
+route::get('/product-list',[productController::class,'product']);
+route::get('/dashboard',[DashboardController::class,'Dashboard']);
